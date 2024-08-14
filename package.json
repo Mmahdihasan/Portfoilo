@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.77.8",
+    "scss": "^0.2.4"
+  },
+  "scripts":{
+    "scss": "npx sass assets/scss/app.scss assets/styles/app.css -w",
+    "postcss": "npx postcss assets/styles/app.css -o assets/styles/app.css"
+  }
+}
