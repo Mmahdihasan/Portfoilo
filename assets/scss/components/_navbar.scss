@@ -1,0 +1,101 @@
+#header {
+  padding: 20px 0px;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 80px 240px 1fr 150px;
+  column-gap: 30px;
+
+  .logo {
+    display: grid;
+    align-content: center;
+    img {
+      height: 30px;
+    }
+  }
+  .email {
+    display: grid;
+    align-content: center;
+    margin-left: -57px;
+    a {
+      &:hover {
+        color: var(--brand_color);
+      }
+    }
+  }
+  .nav_list {
+    display: grid;
+    align-content: center;
+    ul {
+      display: flex;
+      gap: 30px;
+      justify-content: flex-end;
+      li {
+        a {
+          text-transform: capitalize;
+          position: relative;
+          color: var(--brand_color);
+          border-bottom: none;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--brand_color);
+            left: 0;
+            bottom: -2px;
+            transition: width 0.3s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          &:hover {
+            color: var(--brand_color2);
+          }
+        }
+      }
+    }
+  }
+  .hire_me_btn {
+    text-align: right;
+    margin-right: 42px;
+
+    a {
+      color: var(--white);
+      font-family: var(--font_sora_bold);
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden; /* Ensures pseudo-element stays within the button bounds */
+      z-index: 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(129, 76, 236, 1) 0%,
+          rgba(48, 24, 94, 1) 100%
+        );
+        z-index: -1;
+        transition: all 1s ease; /* Smooth transition */
+      }
+
+      &:hover::before {
+        background: linear-gradient(
+          90deg,
+          rgba(48, 24, 94, 1) 0%,
+          rgba(129, 76, 236, 1) 100%
+        );
+      }
+    }
+  }
+}

@@ -133,4 +133,13 @@ strong {
 img{
     max-width: 100%;
     object-fit:cover;
+    display: flex;
+}
+
+body{
+  font-family: var(--font_sora_regular);
+}
+a{
+  text-decoration: none;
+  transition-duration: .3s;
 }
