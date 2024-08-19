@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    padding: 50px 0px;
 
     .left {
         display: grid;
@@ -33,57 +34,64 @@
             display: grid;
             column-gap: 20px;
             grid-template-columns: 200px 1fr;
-            align-items: center;
 
-        .download_cv{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 180px;  
-            height: 40px; 
-            border-radius: 20px; /* Capsule shape */
-            border: 1px solid var(--brand_color);
-            background-color: transparent;
-            color:var(--brand_color);
-            transition: background-color 0.3s ease, color 0.3s ease;
+            .download_cv {
+                .cv_btn {
+                    padding: 15px 25px;
+                    border: 1px solid var(--brand_color);
+                    border-radius: 25px;
+                    color:var(--brand_color);
 
-            &:hover{
-                background-color: var(--brand_color);
-                color:white;
+                    i {
+                        margin-left: 10px;
+                    }
+
+                    &:hover {
+                        background-color: var(--brand_color);
+                        color: var(--white);
+                    }
+                }
             }
-        }
+            .social_icon{
+                display: flex;
+                gap: 20px;
 
-        .social_media_links {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-          }
-          
-          .social_icon {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-          }
-          
-          .social_icon li {
-            margin-right: 15px;
-          }
-          .social_icon li a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 29px;  
-            height: 28px; 
-            border-radius: 50%;
-            border:1px solid var(--brand_color);
-          }
-        }          
+                li {
+                    a {
+                        i {
+                            font-size: 20px;
+                            height: 40px;
+                            width: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            border: 1px solid var(--brand_color);
+                            border-radius: 50%;
+                            color: var(--brand_color);
+
+                            &:hover {
+                                background-color: var(--brand_color);
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }        
     }
 
     .right {
         display: grid;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 435px;
+        transition-duration: 0.3s;
+        transform: rotate(5deg);
     }
+
+    &:hover img {
+        transform: rotate(10deg);
+    }
+    }
+}
 }

@@ -290,6 +290,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+  padding: 50px 0px;
 }
 .banner_part .left {
   display: grid;
@@ -321,51 +322,50 @@ a {
   display: grid;
   column-gap: 20px;
   grid-template-columns: 200px 1fr;
-  align-items: center;
 }
-.banner_part .left .bottom_part .download_cv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 40px;
-  border-radius: 20px; /* Capsule shape */
+.banner_part .left .bottom_part .download_cv .cv_btn {
+  padding: 15px 25px;
   border: 1px solid var(--brand_color);
-  background-color: transparent;
+  border-radius: 25px;
   color: var(--brand_color);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.banner_part .left .bottom_part .download_cv:hover {
+.banner_part .left .bottom_part .download_cv .cv_btn i {
+  margin-left: 10px;
+}
+.banner_part .left .bottom_part .download_cv .cv_btn:hover {
   background-color: var(--brand_color);
-  color: white;
-}
-.banner_part .left .bottom_part .social_media_links {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  color: var(--white);
 }
 .banner_part .left .bottom_part .social_icon {
-  list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
+  gap: 20px;
 }
-.banner_part .left .bottom_part .social_icon li {
-  margin-right: 15px;
-}
-.banner_part .left .bottom_part .social_icon li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 29px;
-  height: 28px;
-  border-radius: 50%;
+.banner_part .left .bottom_part .social_icon li a i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
   border: 1px solid var(--brand_color);
+  border-radius: 50%;
+  color: var(--brand_color);
 }
-.banner_part .right {
+.banner_part .left .bottom_part .social_icon li a i:hover {
+  background-color: var(--brand_color);
+  color: var(--white);
+}
+.banner_part .left .right {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+.banner_part .left .right img {
+  max-width: 435px;
+  transition-duration: 0.3s;
+  transform: rotate(5deg);
+}
+.banner_part .left .right:hover img {
+  transform: rotate(10deg);
 }
 
 /*# sourceMappingURL=app.css.map */
