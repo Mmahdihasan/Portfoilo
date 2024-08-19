@@ -321,6 +321,46 @@ a {
   display: grid;
   column-gap: 20px;
   grid-template-columns: 200px 1fr;
+  align-items: center;
+}
+.banner_part .left .bottom_part .download_cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px; /* Capsule shape */
+  border: 1px solid var(--brand_color);
+  background-color: transparent;
+  color: var(--brand_color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.banner_part .left .bottom_part .download_cv:hover {
+  background-color: var(--brand_color);
+  color: white;
+}
+.banner_part .left .bottom_part .social_media_links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.banner_part .left .bottom_part .social_icon {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.banner_part .left .bottom_part .social_icon li {
+  margin-right: 15px;
+}
+.banner_part .left .bottom_part .social_icon li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--brand_color);
 }
 .banner_part .right {
   display: grid;
