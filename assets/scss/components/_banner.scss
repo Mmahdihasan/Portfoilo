@@ -14,6 +14,27 @@
         color:var(--brand_color2);
         font-family: var(--font_sora_bold);
         }
+        .heading{
+            font-size: 60px;
+            text-transform: uppercase;
+            font-family: var(--font_sora_bold);
+            background:-webkit-linear-gradient(90deg,var(--brand_color),var(--brand_color2));
+            background-clip:text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+        .banner_description{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+        .bottom_part{
+            display: grid;
+            column-gap: 20px;
+            grid-template-columns: 200px 1fr;
+        }
+
     }
 
     .right {
