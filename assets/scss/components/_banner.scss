@@ -1,0 +1,24 @@
+.banner_part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    .left {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        
+        .sub_heading{
+        font-size: 36px;
+        margin-bottom: 20px;
+        color:var(--brand_color2);
+        font-family: var(--font_sora_bold);
+        }
+    }
+
+    .right {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
