@@ -3,14 +3,14 @@
 }
 .navbar {
   display: grid;
-  grid-template-columns: 80px 240px 1fr 150px;
+  grid-template-columns: 100px 240px 1fr 150px;
   column-gap: 30px;
 
   .logo {
     display: grid;
     align-content: center;
     img {
-      height: 30px;
+      height: 50px;
     }
   }
   .email {
