@@ -426,4 +426,9 @@ a {
   color: var(--brand_color); /* Muted color for the text */
 }
 
+.quality_content {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
 /*# sourceMappingURL=app.css.map */
