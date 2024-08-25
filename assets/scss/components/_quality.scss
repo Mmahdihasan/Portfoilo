@@ -1,3 +1,30 @@
+.quality_title {
+  text-align: center; 
+  padding: 35px; 
+  margin: 92px 0 0px 0; 
+
+  .title {
+    font-family: var(--font_sora_bold);
+    font-size: 48px; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(
+        52deg,
+        var(--brand_color),
+        var(--brand_color2)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .pera {
+    font-size: 1rem; 
+  }
+}
+
+
+
 .quality_content {
   display: grid;
   grid-template-columns: 1fr 2fr auto; /* Three columns: left, right, and logo */
