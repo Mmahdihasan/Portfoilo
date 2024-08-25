@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/styles/app.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="assets/plugins/countMe.min.js"></script>
     <script src="assets/js/dependency.js"></script>
@@ -17,9 +23,7 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img
-              src="./assets/image/halkaBeguni-01.png"
-            />
+            <img src="./assets/image/halkaBeguni-01.png" />
           </div>
           <div class="email">
             <a href="mailto:mahdistu01999@gmail.com" target="_blank"
@@ -44,9 +48,7 @@
     <section>
       <div class="container">
         <div class="banner_part">
-          <div class="hi_el">
-            HI
-          </div>
+          <div class="hi_el">HI</div>
           <div class="left">
             <h2 class="sub_heading">I am Mahdi</h2>
             <h1 class="heading">Software Engineer</h1>
@@ -58,11 +60,9 @@
             <div class="bottom_part">
               <div class="download_cv">
                 <a href="#" class="cv_btn">
-                  <span>
-                      Download CV 
-                  </span>
+                  <span> Download CV </span>
                   <i class="fa-solid fa-download"></i>
-              </a>
+                </a>
               </div>
               <div class="social_media_links">
                 <ul class="social_icon">
@@ -98,46 +98,96 @@
         </div>
         <div class="counter_part" x-data="">
           <template x-for="(item,index) in counter_list">
-              <div class="counter_item">
-                <h4 class="count_amount">
-                  <span :class="'counter_box'+(index+1)" x-text="item.counter_amount"></span>
-                  <span x-text="item.counter_unit"></span>
-                </h4>
-                <div class="count_title">
-                  <p x-text="item.counter_label_top"></p>
-                  <p x-text="item.counter_label_bottom"></p>
-                </div>
+            <div class="counter_item">
+              <h4 class="count_amount">
+                <span
+                  :class="'counter_box'+(index+1)"
+                  x-text="item.counter_amount"
+                ></span>
+                <span x-text="item.counter_unit"></span>
+              </h4>
+              <div class="count_title">
+                <p x-text="item.counter_label_top"></p>
+                <p x-text="item.counter_label_bottom"></p>
               </div>
+            </div>
           </template>
         </div>
       </div>
     </section>
-  <section>
-    <div class="container">
-      <div class="box quality_title">
-        <h1 class="title">My Quality Service</h1>
-        <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, inventore.</p>
-      </div>
-      <div class="quality_content">
-          <div class="box left">
+    <section>
+      <div class="container">
+        <div class="box quality_title">
+          <h1 class="title">My Quality Service</h1>
+          <p class="pera">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+            inventore.
+          </p>
+        </div>
+        <div class="box quality_content">
+          <div class="left">
             <span>01</span>
             <h3>ghdfgjdhgjdhg</h3>
           </div>
           <div class="right">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, reiciendis.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              reiciendis.
             </p>
-            <div class="logo">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
+          </div>
+          <div class="logo">
+            <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-    </div>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  </div>
+        <div class="box quality_content">
+          <div class="left">
+            <span>02</span>
+            <h3>ghdfgjdhgjdhg</h3>
+          </div>
+          <div class="right">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              reiciendis.
+            </p>
+          </div>
+          <div class="logo">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="box quality_content">
+          <div class="left">
+            <span>03</span>
+            <h3>ghdfgjdhgjdhg</h3>
+          </div>
+          <div class="right">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              reiciendis.
+            </p>
+          </div>
+          <div class="logo">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="box quality_content">
+          <div class="left">
+            <span>04</span>
+            <h3>ghdfgjdhgjdhg</h3>
+          </div>
+          <div class="right">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              reiciendis.
+            </p>
+          </div>
+          <div class="logo">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
   </body>
 </html>
