@@ -12,10 +12,10 @@
    color: var(--brand_color);
    -webkit-text-fill-color: white;
    -webkit-text-stroke-width:1px;
-   -webkit-text-stroke-color:var(--brand_color);
-   font-family: sans-serif;
+   -webkit-text-stroke-color:var(--brand_color2);
+   font-family: "Russo One",sans-serif;
    font-size:280px;
-   font-weight: 700;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: -0.05em;
    animation:zoomin_out 4s linear infinite;

@@ -1,0 +1,31 @@
+.counter_part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  //text-align: left;
+  margin-left: 20px;
+  padding: 60px, 0;
+
+  .counter_item {
+
+    padding: 30px 20px; 
+
+    .count_amount {
+      font-size: 48px; /* Large font size for numbers */
+      font-weight: bold; /* Bold for emphasis */
+      color: var(--brand_color); /* Dark color for contrast */
+      margin-bottom: 10px; /* Space below the amount */
+
+      .span {
+        display: block; /* Ensure the unit appears on a new line */
+      }
+    }
+    .count_title {
+      p {
+        margin: 0; /* Remove default paragraph margins */
+        font-size: 1.2rem; /* Adjust font size */
+        color: var(--brand_color); /* Muted color for the text */
+      }
+    }
+  }
+}

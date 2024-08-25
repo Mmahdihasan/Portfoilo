@@ -223,6 +223,9 @@ a {
   align-content: center;
   margin-left: -57px;
 }
+.navbar .email a {
+  color: var(--brand_color2);
+}
 .navbar .email a:hover {
   color: var(--brand_color);
 }
@@ -260,6 +263,7 @@ a {
 .navbar .hire_me_btn {
   text-align: right;
   margin-right: 42px;
+  align-content: center;
 }
 .navbar .hire_me_btn a {
   color: var(--white);
@@ -300,10 +304,10 @@ a {
   color: var(--brand_color);
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--brand_color);
-  font-family: sans-serif;
+  -webkit-text-stroke-color: var(--brand_color2);
+  font-family: "Russo One", sans-serif;
   font-size: 280px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -0.05em;
   animation: zoomin_out 4s linear infinite;
@@ -396,6 +400,30 @@ a {
   100% {
     transform: scale(0.98) translate(-50%, -50%);
   }
+}
+.counter_part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  margin-left: 20px;
+  padding: 60px, 0;
+}
+.counter_part .counter_item {
+  padding: 30px 20px;
+}
+.counter_part .counter_item .count_amount {
+  font-size: 48px; /* Large font size for numbers */
+  font-weight: bold; /* Bold for emphasis */
+  color: var(--brand_color); /* Dark color for contrast */
+  margin-bottom: 10px; /* Space below the amount */
+}
+.counter_part .counter_item .count_amount .span {
+  display: block; /* Ensure the unit appears on a new line */
+}
+.counter_part .counter_item .count_title p {
+  margin: 0; /* Remove default paragraph margins */
+  font-size: 1.2rem; /* Adjust font size */
+  color: var(--brand_color); /* Muted color for the text */
 }
 
 /*# sourceMappingURL=app.css.map */
