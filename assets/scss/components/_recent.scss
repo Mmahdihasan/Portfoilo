@@ -1,3 +1,6 @@
+.recent{
+  margin-bottom: 120px;
+}
 .recent_work {
   text-align: center;
   padding: 35px;
@@ -32,13 +35,13 @@
   .shadow {
     border-radius: 25px;
     //border: 1px solid red;
-    background-color:#f6f3fc; 
+    background-color: #f6f3fc;
     ul {
       display: flex;
 
       li {
-        margin-right: 10px; 
-        
+        margin-right: 10px;
+
         &:last-child {
           margin-right: 0;
         }
@@ -67,8 +70,9 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 40px; /* Gap between rows */
   column-gap: 0px; /* Gap between columns */
+  
 
-  .image_row{
+  .image_row {
     display: contents;
 
     img {
@@ -80,4 +84,3 @@
     }
   }
 }
-

@@ -1,0 +1,71 @@
+// .education_experience {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   column-gap: 10px;
+//   margin-bottom: 120px;
+
+//   .education_experience_div {
+
+//     .education_experience_title{
+
+//     }
+//     .education_box{
+//         .date{
+
+//         }
+//         .role{
+
+//         }
+//         .place{
+
+//         }
+//     }
+//   }
+// }
+.education_experience {
+  padding: 50px 20px; /* Padding inside the entire section */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 120px;
+  border-radius: 10px; /* Optional: to add rounded corners to the entire section */
+
+  .education_experience_div {
+    background-color: transparent; /* Transparent background for the div containing education boxes */
+
+    .education_experience_title {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .education_box {
+      background-color: #f6f3fc; /* White background for each education box */
+      padding: 20px; /* Padding inside each education box */
+      margin-bottom: 20px; /* Space between boxes */
+      border-radius: 8px; /* Rounded corners for the boxes */
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow to each box */
+
+      .date {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .role {
+        font-style: italic;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .place {
+        font-size: 16px;
+        color: #777;
+      }
+    }
+  }
+}
