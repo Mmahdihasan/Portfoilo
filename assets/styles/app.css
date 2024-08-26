@@ -572,19 +572,37 @@ tbody tr:hover td i {
 
 .education_experience {
   padding: 50px 20px; /* Padding inside the entire section */
+  padding-left: 95px;
+  padding-right: 95px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 160px;
   margin-bottom: 120px;
   border-radius: 10px; /* Optional: to add rounded corners to the entire section */
 }
 .education_experience .education_experience_div {
   background-color: transparent; /* Transparent background for the div containing education boxes */
 }
+.education_experience .education_experience_div .education_experience_title {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  column-gap: 30px;
+  padding-bottom: 30px;
+}
+.education_experience .education_experience_div .education_experience_title .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: var(--brand_color);
+}
 .education_experience .education_experience_div .education_experience_title h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: bold;
+  background: linear-gradient(to right, var(--brand_color), var(--brand_color2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .education_experience .education_experience_div .education_box {
   background-color: #f6f3fc; /* White background for each education box */
@@ -596,18 +614,27 @@ tbody tr:hover td i {
 .education_experience .education_experience_div .education_box .date {
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
+  font-size: 20px;
+  color: var(--brand_color);
 }
 .education_experience .education_experience_div .education_box .role {
-  font-style: italic;
-  margin-bottom: 5px;
-  font-size: 16px;
-  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: var(--brand_color2);
 }
 .education_experience .education_experience_div .education_box .place {
-  font-size: 16px;
-  color: #777;
+  font-size: 18px;
+  color: black;
+}
+.education_experience .education_experience_div .education_box:hover {
+  background: linear-gradient(to right, var(--brand_color), var(--brand_color2)); /* Gradient background on hover */
+}
+.education_experience .education_experience_div .education_box:hover .date,
+.education_experience .education_experience_div .education_box:hover .role,
+.education_experience .education_experience_div .education_box:hover .place {
+  color: white; /* Ensure all text inside the box turns white on hover */
+  transition: color 0.5s ease;
 }
 
 /*# sourceMappingURL=app.css.map */

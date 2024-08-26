@@ -1,32 +1,10 @@
-// .education_experience {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   column-gap: 10px;
-//   margin-bottom: 120px;
-
-//   .education_experience_div {
-
-//     .education_experience_title{
-
-//     }
-//     .education_box{
-//         .date{
-
-//         }
-//         .role{
-
-//         }
-//         .place{
-
-//         }
-//     }
-//   }
-// }
 .education_experience {
   padding: 50px 20px; /* Padding inside the entire section */
+  padding-left: 95px;
+  padding-right: 95px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 160px;
   margin-bottom: 120px;
   border-radius: 10px; /* Optional: to add rounded corners to the entire section */
 
@@ -34,10 +12,28 @@
     background-color: transparent; /* Transparent background for the div containing education boxes */
 
     .education_experience_title {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      column-gap: 30px;
+      padding-bottom: 30px;
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        color: var(--brand_color);
+      }
       h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 48px;
         font-weight: bold;
+        background: linear-gradient(
+          to right,
+          var(--brand_color),
+          var(--brand_color2)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 
@@ -47,24 +43,38 @@
       margin-bottom: 20px; /* Space between boxes */
       border-radius: 8px; /* Rounded corners for the boxes */
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow to each box */
-
       .date {
         font-weight: bold;
         margin-bottom: 10px;
-        font-size: 16px;
-        color: #333;
+        font-size: 20px;
+        color: var(--brand_color);
       }
 
       .role {
-        font-style: italic;
-        margin-bottom: 5px;
-        font-size: 16px;
-        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 28px;
+        color: var(--brand_color2);
       }
 
       .place {
-        font-size: 16px;
-        color: #777;
+        font-size: 18px;
+        color: black;
+      }
+
+      &:hover {
+        background: linear-gradient(
+          to right,
+          var(--brand_color),
+          var(--brand_color2)
+        ); /* Gradient background on hover */
+
+        .date,
+        .role,
+        .place {
+          color: white; /* Ensure all text inside the box turns white on hover */
+          transition: color 0.5s ease;
+        }
       }
     }
   }
