@@ -1,0 +1,83 @@
+.recent_work {
+  text-align: center;
+  padding: 35px;
+  margin: 92px 0 0px 0;
+
+  .recent_title {
+    padding: 20px;
+    font-family: var(--font_sora_bold);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(
+      52deg,
+      var(--brand_color),
+      var(--brand_color2)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .recent_pera {
+    font-size: 1rem;
+  }
+}
+
+.recent_links {
+  display: flex;
+  justify-content: center; /* Horizontally center the links */
+  align-items: center; /* Vertically center the links */
+  height: 28vh; /* Optional: Set the container height to fill the viewport */
+
+  .shadow {
+    border-radius: 25px;
+    //border: 1px solid red;
+    background-color:#f6f3fc; 
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 10px; 
+        
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: inline-block;
+          padding: 20px 40px;
+          border-radius: 25px;
+          color: var(--brand_color);
+
+          &:hover {
+            background: linear-gradient(
+              90deg,
+              var(--brand_color),
+              var(--brand_color2)
+            );
+            color: white; /* Text turns white on hover */
+          }
+        }
+      }
+    }
+  }
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px; /* Gap between rows */
+  column-gap: 0px; /* Gap between columns */
+
+  .image_row{
+    display: contents;
+
+    img {
+      width: 85%; /* Adjust the size of the images */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Add border radius to the images */
+      display: block; /* Remove any extra spacing below images */
+      margin: 0 auto; /* Center the images horizontally */
+    }
+  }
+}
+

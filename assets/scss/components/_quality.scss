@@ -1,52 +1,71 @@
 .quality_title {
-  text-align: center; 
-  padding: 35px; 
-  margin: 92px 0 0px 0; 
+  text-align: center;
+  padding: 35px;
+  margin: 92px 0 0px 0;
 
   .title {
+    padding: 20px;
     font-family: var(--font_sora_bold);
-    font-size: 48px; 
-    font-weight: bold; 
+    font-size: 48px;
+    font-weight: bold;
     margin-bottom: 10px;
     background: -webkit-linear-gradient(
-        52deg,
-        var(--brand_color),
-        var(--brand_color2)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      52deg,
+      var(--brand_color),
+      var(--brand_color2)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-
   .pera {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+th, td {
+  padding: 30px 15px;
+  text-align: left;
+}
 
+tbody tr {
+  background-color: #f9f9f9;
+}
 
+/* Default style for alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.quality_content {
-  display: grid;
-  grid-template-columns: 1fr 2fr auto; /* Three columns: left, right, and logo */
-  align-items: center; /* Align items vertically centered */
-  gap: 20px; /* Optional: Add space between columns */
-  //background-color: blue;
-  padding: 20px 0px;
+/* Hover effect for table rows */
+tbody tr:hover {
+  background: linear-gradient(135deg, var(--brand_color), var(--brand_color2));
+  color: #fff;
+}
 
-  .left {
-    display: flex;
-    align-items: center; /* Align the span and h3 vertically centered */
+/* Table borders */
+th, td {
+  border-bottom: 1px solid #ddd;
+}
 
-    span {
-        margin-left: 10px;
-      margin-right: 10px; /* Optional: Add some space between the span and h3 */
-      font-weight: bold; /* Make span content bold */
-      font-size: 20px;
-    }
-    h3 {
-      margin: 0; /* Remove default margin from h3 */
-      font-weight: bold; /* Make span content bold */
-      font-size: 20px;
-    }
-  }
+th {
+  text-align: center;
+  font-weight: bold;
+}
+
+tbody td i {
+  font-size: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: rotate(-45deg); /* Pointing to upper right corner */
+}
+
+/* Hover effect on the row */
+tbody tr:hover td i {
+  transform: rotate(45deg) translate(5px, 5px); /* Pointing to bottom right corner */
 }
